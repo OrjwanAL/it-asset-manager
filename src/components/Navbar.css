@@ -1,0 +1,73 @@
+/* Base navigation bar styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 1rem 2rem;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+/* Remove default list styling */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the router links */
+.nav-item {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Add a hover effect for user feedback */
+.nav-item:hover {
+  color: #38bdf8;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* ADD THIS LINE */
+  gap: 1rem;       /* ADD THIS LINE */
+  /* ... keep your other navbar styles ... */
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* ADD THIS LINE */
+  gap: 2rem;
+  /* ... keep your other navbar-links styles ... */
+}
+/* Align the logo and the title */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* Style the logo icon */
+.brand-logo {
+  color: #38bdf8;
+}
+
+.navbar-brand h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}

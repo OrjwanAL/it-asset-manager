@@ -1,0 +1,46 @@
+IT Asset Management System
+A responsive, client-side IT Hardware Asset Management dashboard developed with React and Vite. The application allows IT teams to track, categorize, and perform CRUD operations across workstations, hardware components, accessories, and networking gear without requiring a backend database.
+
+Features
+Multi-Category Asset Tracking: Dedicated dashboards for Computers, Hardware Components, Peripheral Accessories, and Network Equipment.
+
+Full CRUD Operations: Create, view, edit, and delete asset records in real time.
+
+Contextual Modals & Dynamic Dropdowns: Dynamic dialog modals presenting input validation and category-specific type selectors.
+
+Client-Side Data Persistence: Browser localStorage integration that preserves data across routes and browser sessions without an external database.
+
+Responsive Dark Interface: Mobile-first design featuring modern dark-palette gradients, card-based team profiles, and horizontally scrolling data tables.
+
+Automated Component Testing: Integration tests powered by Vitest, React Testing Library, and JSDOM validating rendering and CRUD workflows.
+
+Architecture
+The application is structured into four main architectural layers:
+
+src/
+├── assets/          # Static branding and media assets
+├── components/      # Global layout components (Navbar)
+├── pages/           # Dynamic views and CRUD engines (AssetManager, About)
+├── style.css        # Core layout resets and global CSS variables
+├── setupTests.js    # Test environment configuration
+└── main.jsx         # Application root mount and Router initialization
+Routing Layer: Managed by react-router-dom, mapping distinct endpoints (/, /hardware, /accessories, /network, /about) to dedicated configurations.
+
+Reusable Engine (AssetManager): A parameterized component accepting dynamic category props (title, assetTypes, storageKey), decoupling layout from business logic.
+
+Storage Layer: Local state managed by useState and synced with browser localStorage using useEffect lifecycle triggers.
+
+Presentation Layer: Scoped CSS modules providing flexbox toolbars, modal overlays, and responsive CSS grid wrappers.
+
+Technology Stack
+Frontend Framework: React 18+
+
+Build Tool: Vite
+
+Routing: React Router DOM
+
+Iconography: Lucide React
+
+Testing Suite: Vitest, React Testing Library, JSDOM, Jest-DOM
+
+Styling: Native Responsive CSS3
