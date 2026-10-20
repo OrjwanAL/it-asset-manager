@@ -1,0 +1,50 @@
+# IT Asset Management System
+
+This is a full-stack web application built with React (Frontend) and Spring Boot (Backend). It features a REST API and a persistent file-based H2 database for tracking IT hardware, computers, accessories, and network equipment.
+
+## Prerequisites
+* **Node.js** (v18 or higher)
+* **Java Development Kit (JDK) 17** (e.g., Eclipse Temurin)
+* **Maven** (included via the project wrapper)
+
+## 1. Start the Spring Boot Backend
+The backend server runs on port 8080 and handles the REST API, cross-origin resource sharing (CORS), and database connections.
+
+1. Open a terminal and navigate to the backend directory:
+   ```bash
+   cd backend
+Start the server using the Maven wrapper:
+
+Windows: .\mvnw.cmd spring-boot:run
+
+Mac/Linux: ./mvnw spring-boot:run
+
+Wait until the terminal displays Tomcat started on port 8080. (Leave this terminal running).
+
+2. Start the React Frontend
+The frontend runs on Vite via port 5173 and communicates dynamically with the backend.
+
+Open a new, separate terminal window and navigate to the frontend directory:
+
+Bash
+cd frontend
+Install the necessary Node dependencies (only required the first time):
+
+Bash
+npm install
+Start the development server:
+
+Bash
+npm run dev
+3. Access the Application
+Once both servers are actively running, use the following links:
+
+Application UI: http://localhost:5173
+
+H2 Database Console: http://localhost:8080/h2-console
+
+JDBC URL: jdbc:h2:file:./data/assetdb
+
+Username: sa
+
+Password: (leave completely blank)

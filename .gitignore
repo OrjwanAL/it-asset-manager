@@ -24,3 +24,27 @@ dist-ssr
 *.sw?
 .env
 .env.*
+
+# Backend generated files
+**/target/
+**/.mvn/wrapper/maven-wrapper.jar
+*.mv.db
+*.trace.db
+
+# Environment and secrets
+**/.env
+**/.env.*
+
+# Backend generated files
+**/target/
+*.mv.db
+*.trace.db
+
+# Environment and secrets
+**/.env
+**/.env.*
+
+# Dependencies and build outputs
+**/node_modules/
+**/dist/
+.DS_Store
